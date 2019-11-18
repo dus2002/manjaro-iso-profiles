@@ -71,7 +71,7 @@ udisks2
 >extra git
 >extra patchutils
 >extra subversion
-#yaourt
+>extra yaourt
 
 ## Fonts
 # cantarell-fonts        # Installed as gnome-themes-standard dependency
@@ -91,26 +91,31 @@ terminus-font
 >x86_64 >extra steam-manjaro
 
 ## Package management
-#appimagelauncher
-pamac
-pamac-tray-appindicator
-pamac-cli
+appimagelauncher
+#pamac
+#pamac-tray-appindicator
+#pamac-cli
 >extra apparmor
 >extra snapd
->extra snapd-glib
->extra pamac-snap-plugin
+#>extra snapd-glib
+#>extra pamac-snap-plugin
 #discover-snap
 #discover
 #packagekit-qt5
->extra flatpak
 >extra bauh
 >extra fwupd 
-#octopi
+octopi
 #octopi-cachecleaner
 #octopi-repoeditor
-#octopi-notifier-frameworks
+octopi-notifier-frameworks
+alpm-octopi-utils
 #pamac-qt
-manjaro-application-utility
+#manjaro-application-utility
+
+## Flatpak support
+>extra flatpak
+>extra xdg-desktop-portal
+>extra xdg-desktop-portal-kde
 
 ## Printing
 >extra cups
@@ -134,8 +139,11 @@ manjaro-application-utility
 >extra python-pysmbc          # SMB browser support
 
 ## Display manager
-sddm
-sddm-kcm
+#sddm
+#sddm-kcm
+lightdm
+lightdm-settings
+
 
 ## Plasma5
 bluedevil
@@ -145,7 +153,8 @@ kgamma5
 kinfocenter
 kmenuedit
 kscreen
-kscreenlocker
+#kscreenlocker
+light-locker
 ksshaskpass
 ksysguard
 kwallet-pam
@@ -163,7 +172,7 @@ powerdevil
 systemsettings
 user-manager
 
-## Themes QT/GTK/SDDM
+## Themes QT/GTK/LightDM
 #breeze
 #breeze-gtk
 gnome-icon-theme
@@ -172,7 +181,8 @@ gtk-theme-breath
 oxygen # needed to provide KDE system sounds
 oxygen-icons
 plasma5-themes-breath  # Default
-sddm-breath-theme  # Default
+#sddm-breath-theme  # Default
+lightdm-slick-greeter
 grub-theme-manjaro
 illyria-wallpaper
 >extra wallpapers-juhraya
@@ -188,7 +198,7 @@ ark
 dolphin
 dolphin-plugins
 >extra filelight
-#>extra k3b
+>extra k3b
 kate
 kcalc
 >extra keditbookmarks
@@ -209,7 +219,8 @@ konversation
 ksystemlog
 kwalletmanager
 gwenview
-partitionmanager3
+#partitionmanager3
+gnime-disk-utility
 >extra print-manager
 >extra skanlite
 spectacle
@@ -232,12 +243,12 @@ kimageformats     # support for dds, xcf, exr, psd, and more image formats
 qt5-imageformats  # support for tiff, webp, and more image formats
 
 ## Optional dependencies for k3b
-#>extra cdparanoia    # for cd ripping support
-#>extra cdrdao        # for disk-at-once (DAO) mode support
-#>extra dvd+rw-tools  # for dvd burning support
-#>extra emovix        # for bootable multimedia cd/dvd support
-#>extra transcode     # for advanced mpeg conversion support
-#>extra vcdimager     # for vcd burning support
+>extra cdparanoia    # for cd ripping support
+>extra cdrdao        # for disk-at-once (DAO) mode support
+>extra dvd+rw-tools  # for dvd burning support
+>extra emovix        # for bootable multimedia cd/dvd support
+>extra transcode     # for advanced mpeg conversion support
+>extra vcdimager     # for vcd burning support
 
 ## Optional dependencies for kaccounts-integration
 kaccounts-providers
@@ -267,27 +278,29 @@ inxi
 >basic falkon
 #ms-office-online
 #>extra freeoffice
-#>extra libreoffice-still
+>extra libreoffice-fresh
 #>extra calligra
 manjaro-hello
 manjaro-settings-manager-kcm
 manjaro-settings-manager-knotifier
 powertop
 #>extra qbittorrent
+>extra transmission-qt
+>extra transmission-cli
 screenfetch
 systemd-kcm
 >extra thunderbird
 >extra vlc
 #vlc-nightly
-yakuake
+#yakuake
 
 ## Optional dependencis for cantata
 #>extra mpd       # playback
 #>extra perl-uri  # dynamic playlist
 
 ## Optional dependencies for libreoffice
-#>extra jre8-openjdk
-#>extra jdk8-openjdk
+>extra jre8-openjdk
+>extra jdk8-openjdk
 
 ## Documentation
 manjaro-documentation-en
@@ -304,6 +317,11 @@ xf86-input-keyboard
 xf86-input-libinput
 xf86-input-mouse
 xf86-input-void
+xf86-input-wacom
+
+## Wacom Support
+kcm-wacomtablet
+libwacom
 
 ## Xorg Server and Graphics
 >multilib lib32-libva-intel-driver
@@ -331,8 +349,3 @@ xdg-su
 ## Misc
 manjaro-hotfixes
 >basic squashfs-tools
-
-## Flatpak support
->extra flatpak
->extra xdg-desktop-portal
->extra xdg-desktop-portal-kde
