@@ -167,7 +167,7 @@ networkmanager-qt
 openresolv
 
 ##------------> core
-compton
+picom
 compton-conf
 lxqt-about
 lxqt-admin
@@ -207,7 +207,6 @@ freetype2
 accountsservice
 gksu-polkit
 gnome-keyring
-gtk3-classic
 manjaro-hotfixes
 perl-file-mimeinfo
 polkit
