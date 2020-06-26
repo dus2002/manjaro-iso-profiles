@@ -1,3 +1,4 @@
+notepadqq
 
 ## xorg - should be explicitly installed to prevent user from removing accidentally
 xorg-server
@@ -8,20 +9,15 @@ sddm
 
 ## plasma
 plasma-desktop
-dolphin
 konsole
->extra kwrite
 >extra kde-servicemenus-rootactions
 >extra plasma-pa
 >extra kde-gtk-config
 >extra breeze-gtk
 >extra systemd-kcm
->extra plasma-wayland-session
 >extra xdg-user-dirs
->extra ark
 # optional dependencies of ark:
 >extra p7zip
->extra unarchiver
 # wifi setup for systemd-networkd (recommended reading: https://wiki.archlinux.org/index.php/Systemd-networkd#Wireless_adapter  and  https://wiki.archlinux.org/index.php/WPA_supplicant):
 #>extra wpa_supplicant_gui
 
@@ -36,9 +32,25 @@ konsole
 ## AUR support
 >extra base-devel
 >extra git
->extra yaourt
+>extra yay
 
 ## manjaro settings manager
 >extra manjaro-settings-manager
 >extra manjaro-settings-manager-kcm
 >extra manjaro-settings-manager-knotifier
+
+## system repair tools for chroot, partitioning, internet research, iso writer, SMART tool, ...
+memtest86+
+manjaro-tools-base
+gsmartcontrol
+partitionmanager
+# optional dependencies of partitionmanager:
+dosfstools
+f2fs-tools
+btrfs-progs
+exfat-utils
+ntfs-3g
+xfsprogs
+nilfs-utils
+gpart
+mtools

@@ -10,19 +10,3 @@ mkinitcpio-nfs-utils
 calamares
 squashfs-tools
 xdg-user-dirs
-
-## system repair tools for chroot, partitioning, internet research, iso writer, SMART tool, ...
-memtest86+
-manjaro-tools-base
-gsmartcontrol
-partitionmanager
-# optional dependencies of partitionmanager:
-dosfstools
-f2fs-tools
-btrfs-progs
-exfat-utils
-ntfs-3g
-xfsprogs
-nilfs-utils
-gpart
-mtools
