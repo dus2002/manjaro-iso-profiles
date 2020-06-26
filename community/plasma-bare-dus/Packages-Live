@@ -2,7 +2,6 @@
 ## live system environment - required packages
 manjaro-live-skel
 manjaro-live-systemd
-grub-theme-live-manjaro
 nbd
 mkinitcpio-nfs-utils
 
