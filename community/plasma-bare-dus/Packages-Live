@@ -14,11 +14,9 @@ xdg-user-dirs
 ## system repair tools for chroot, partitioning, internet research, iso writer, SMART tool, ...
 memtest86+
 manjaro-tools-base
-falkon
-imagewriter
 gsmartcontrol
-gparted
-# optional dependencies of gparted:
+partitionmanager
+# optional dependencies of partitionmanager:
 dosfstools
 f2fs-tools
 btrfs-progs
