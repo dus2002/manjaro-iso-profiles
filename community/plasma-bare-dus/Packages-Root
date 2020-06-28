@@ -8,6 +8,9 @@ manjaro-system
 mhwd
 sudo
 
+## Grub Theme
+grub-theme-live-manjaro
+
 ## boot loader
 grub
 os-prober
